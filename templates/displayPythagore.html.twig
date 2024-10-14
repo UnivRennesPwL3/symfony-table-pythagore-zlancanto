@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
+{% extends 'base.html.twig' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} Symfony & table de pythagore {% endblock %}</title>
-    <link rel="stylesheet" href="{{ asset('styles.css') }}">
-</head>
+{% block content %} {{ htmlResponse }} {% endblock %}
 
-<body>
-<header>
-    {% block header %}
-        <div class="header-container">
-            <h1>{{ nameStudent }}</h1>
-        </div>
-    {% endblock %}
-</header>
-<main>
-    {% block main %}{% endblock %}
-</main>
-<footer>
-    {% block footer %}
-        <div class="footer-container">
-            <p>© 2024 Table de Pgythagore. Tous droits réservés.</p>
-        </div>
-    {% endblock %}
-</footer>
-</body>
-
-</html>
