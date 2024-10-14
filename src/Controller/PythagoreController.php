@@ -19,9 +19,8 @@ class PythagoreController extends AbstractController
     #[Route('/pythagore', name: 'app_pythagore')]
     public function index(): Response
     {
-        $html = $this->pythagoreUtility->display();
         return $this->render('pythagore/index.html.twig', [
-            'html' => $html,
+            'html' => $this->pythagoreUtility->display(),
             'title' => 'Symfony & table de pythagore',
             'nameStudent' => 'MIHAN Zlanca-Nto',
         ]);
