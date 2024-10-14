@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class PythagoreController extends AbstractController
 {
-    private $pythagoreUtility;
+    private PythagoreUtility $pythagoreUtility;
 
     public function __construct(PythagoreUtility $pythagoreUtility)
     {
